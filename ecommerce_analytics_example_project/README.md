@@ -1,15 +1,37 @@
-Welcome to your new dbt project!
+# E-commerce Analytics dbt Project
 
-### Using the starter project
+This is an example dbt project: 
+I transform raw e-commerce data into analytics-ready models.
+The project showcases key dbt features including:
 
-Try running the following commands:
-- dbt run
-- dbt test
+- **Modular model design**: Using staging, intermediate, and mart layers
+- **Data testing and validation**: Testing primary keys, foreign keys, and business logic
+- **Documentation**: Comprehensive documentation for all models
+- **Custom macros**: Reusable code snippets
+- **Snapshots**: Type 2 slowly changing dimension tracking
+- **Seeds**: Static reference data
+- **Analysis**: Ad-hoc analytical queries
 
+## Data Model
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+![Data Model Diagram](assets/data_model.png)
+
+## Project Structure
+
+The project follows the recommended dbt project structure:
+
+- **Staging models**: Clean and standardize source data
+- **Intermediate models**: Perform complex transformations
+- **Mart models**: Create business-ready dimensional models
+- **Core mart models**: General purpose dimensional tables
+- **Marketing mart models**: Marketing-specific analytical tables
+
+## Features Demonstrated
+
+1. **Source freshness testing**: Monitoring data pipeline health
+2. **Custom schema generation**: Environment-specific schema handling
+3. **Package dependencies**: Leveraging community packages
+4. **Custom tests**: Business-specific validation logic
+5. **Materializations**: Views, tables, and ephemeral models
+6. **Documentation**: YAML-based model documentation
+7. **Snapshots**: Type 2 SCD pattern
